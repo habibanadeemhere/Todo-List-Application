@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+  <div class="container"><br>
+
+<button id="red" onclick="changeColor('red')">🔴</button>
+<button id="green" onclick="changeColor('green')">🟢</button>
+<button id="yellow" onclick="changeColor('yellow')">🟡</button>
+<button id="blue" onclick="changeColor('blue')">🔵</button>
+<button id="orange" onclick="changeColor('orange')">🟠</button>
+<button id="purple" onclick="changeColor('purple')">🟣</button>
+<button id="pink" onclick="changeColor('pink')">💗</button>
+<button id="black" onclick="changeColor('black')">⚫</button>
+<button  id="white" onclick="changeColor('white')">⚪</button>
+<button id="brown" onclick="changeColor('brown')">🟤</button>
+<button id="gray" onclick="changeColor('gray')">🔘</button>
+<button id="gold" onclick="changeColor('gold')">🟨</button>
+<button id="sky" onclick="changeColor('sky')">💠</button>
+<button id="sky" onclick="changeColor('none')">🚫</button>
+<br><br>
+
+
+
+    <h1>🌟My To-Do List🌟</h1>
+
+    <div class="box">
+      <input type="text" id="userinp" placeholder="Enter your task..." />
+      <button id="addbtn"><i class="fa-solid fa-plus"></i></button>
+      <button id="dltbtn" class="delete"><i class="fa-solid fa-trash"></i></button>
+    </div>
+
+    <ul id="list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
