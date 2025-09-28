@@ -5,6 +5,10 @@ var alltodo = document.getElementById("list");
 var editindex = null;
 
 
+if (localStorage.getItem('todos')) {
+    alltodo.innerHTML = localStorage.getItem('todos');
+}
+
 
 
 addd.addEventListener("click", function () {
@@ -35,6 +39,8 @@ addd.addEventListener("click", function () {
   }
 
   usertodo.value = "";
+localStorage.setItem('todos', alltodo.innerHTML);
+
 });
 
 function edit(btn) {
@@ -49,15 +55,13 @@ function edit(btn) {
 
 function dele(btn) {
   btn.closest("li").remove();
+     localStorage.setItem('todos', alltodo.innerHTML);
 }
 
 dlt.addEventListener("click", function () {
   alltodo.innerHTML = "";
+  localStorage.removeItem('todos');
 });
-
-
-
-
 
 
 
@@ -112,6 +116,11 @@ else if (color === 'none') {
 
 
 }
+
+
+
+
+
 
 
 
